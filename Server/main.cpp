@@ -270,7 +270,6 @@ void floydWarshall(int *graph, int x, int y){
     // Print the shortest distance matrix
     printSolution(dist, x, y);
 }
-
 /* A utility function to print solution */
 void printSolution(int *dist, int x, int y) {
     cout << "The following matrix shows the shortest distances between every pair of vertices \n";

@@ -45,7 +45,6 @@ int main() {
     // Do-while loop to send and receive data
     char buf[4096];
     string userInput;
-
     do {
         // Prompt the user for some text
         cout << ">";

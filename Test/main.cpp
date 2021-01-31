@@ -5,13 +5,11 @@ using namespace std;
 
 // Numer of vertices in the gaph
 #define V 4
-
 /**
  * Define Infinite as a large enough value
  * This value will be used for vertices not connected to each other
 */
 #define INF 99999
-
 // A function to print the solution matrix
 void printSolution(int dist[][V]);
 
@@ -66,7 +64,6 @@ void floydWarshall(int graph[][V])
     // Print the shortest distance matrix
     printSolution(dist);
 }
-
 void printSolution(int dist[][V])
 {
     cout << "The following matrix shows the shortest distances"
@@ -85,7 +82,6 @@ void printSolution(int dist[][V])
         cout << endl;
     }
 }
-
 // Driver code
 int main()
 {
@@ -105,7 +101,6 @@ int main()
                         {INF, INF, 0, 1},
                         {INF, INF, INF, 0}
     };
-
     // Print solution
     floydWarshall(graph);
     return 0;
